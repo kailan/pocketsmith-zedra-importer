@@ -9,7 +9,6 @@ I do NOT recommend using this unless you are a confident developer and understan
 ## Prerequisites
 
 - A PocketSmith transaction account set up as a payroll account (e.g. "My Company PAYE"). This holds the transactions imported from your payslips as well as the final take-home pay transfer to your bank account.
-- A PocketSmith transaction account set up for your bank account (e.g. "My Bank Account"). This is where the final take-home pay will be transferred to.
 - PocketSmith categories for every line item in your payslip. For example, you might have categories for "Salary", "Tax", "National Insurance", "Medical Insurance", etc. These do not need to match the names in your payslip as you can map them in the configuration file.
 
 ### Script Usage
