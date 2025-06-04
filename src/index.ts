@@ -99,6 +99,8 @@ async function run() {
   const netPayCategoryId = categories.find((cat) => cat.title === config.netPayCategoryName)?.id;
   if (!netPayCategoryId) {
     throw new Error(`Net pay category "${config.netPayCategoryName}" not found in PocketSmith`);
+  } else {
+    console.log(`Net pay category ID found: ${netPayCategoryId}`);
   }
 
   // Convert payslip lines to PocketSmith transactions
