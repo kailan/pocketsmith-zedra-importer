@@ -11,7 +11,7 @@ I do NOT recommend using this unless you are a confident developer and understan
 - A PocketSmith transaction account set up as a payroll account (e.g. "My Company PAYE"). This holds the transactions imported from your payslips as well as the final take-home pay transfer to your bank account.
 - PocketSmith categories for every line item in your payslip. For example, you might have categories for "Salary", "Tax", "National Insurance", "Medical Insurance", etc. These do not need to match the names in your payslip as you can map them in the configuration file.
 
-### Script Usage
+## Script Usage
 
 1. Extract your interactive payslip from the Zedra payroll portal as JSON and save it to `payslip.json` in the root directory of this project. **If you can't figure out how to do this then please stop here.**
 2. Copy `config.example.json` to `config.json` and fill in your PocketSmith developer key, account name, payee names, and other settings:
