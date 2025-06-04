@@ -25,13 +25,9 @@ class TransactionConverter {
     type: 'addition' | 'deduction',
   ): pocketsmith.Transaction[] {
     return module.moduleLines.filter((item) => item.total > 0).map((item) => {
-      if (this.categoryMap[item.description] === undefined) {
-        throw new Error(`Category mapping for payslip line "${item.description}" not found`);
-      }
-
       const categoryId = this.categoryMap[item.description];
       if (!categoryId) {
-        throw new Error(`Category ID for payslip line "${item.description}" not found in category map`);
+        throw new Error(`Category mapping for payslip line "${item.description}" not found`);
       }
 
       const amount = type === 'addition' ? item.total : -item.total;
