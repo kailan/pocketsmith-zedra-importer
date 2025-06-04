@@ -1,0 +1,15 @@
+{
+  "pocketsmithDeveloperKey": "abcdefghijklmnopqrstuvwxyz1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+  "transactionAccountName": "My PAYE",
+  "transactionsNeedReview": true,
+  "employerPayeeName": "My Employer",
+  "employeePayeeName": "My Bank Account",
+  "netPayCategoryName": "Transfer",
+  "payslipLineToCategoryNameMapping": {
+    "Salary": "Salary",
+    "Tax": "Income Tax",
+    "NI": "National Insurance",
+    "PMI": "Medical Insurance",
+    "Dental Deduction": "Dental Insurance"
+  }
+}

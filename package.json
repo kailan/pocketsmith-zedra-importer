@@ -1,0 +1,14 @@
+{
+  "name": "pocketsmith-zedra-importer",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node ."
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}

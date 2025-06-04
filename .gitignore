@@ -1,0 +1,5 @@
+node_modules/
+
+# files containing sensitive information
+payslip.json
+config.json
