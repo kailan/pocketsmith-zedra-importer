@@ -131,6 +131,12 @@ async function run() {
     });
   }
 
+  // Validate that the transactions sum to zero
+  const totalTransactions = transactions.reduce((sum, transaction) => sum + (transaction.amount*100), 0);
+  if (totalTransactions !== 0) {
+    throw new Error(`Transaction totals do not match net pay: ${totalTransactions/100} !== ${-payslip.takeHomePay}. There may be a payslip module missing or incorectly assigned as addition/deduction.`);
+  }
+
   // If args include --publish, send the transactions to PocketSmith
   if (process.argv.includes('--publish')) {
     await publishTransactions(transactions, transactionAccount.id);
